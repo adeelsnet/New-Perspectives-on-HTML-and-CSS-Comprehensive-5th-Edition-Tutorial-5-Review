@@ -1,0 +1,91 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 5
+   Review Assignment
+
+   Programming Table Style Sheet
+   Author: Adeel Ahmed
+   Date:   April 2, 2019
+
+   Filename:         programs.css
+   Supporting Files: 
+
+*/
+
+table.programs {
+	width: 100%;
+	border: 2px solid black;
+	border-collapse: collapse;
+	font-family: Arial, Verdana, sans-serif;
+}
+
+table caption {
+	caption-side: bottom;
+	text-align: left;
+	font-size: 0.8em;
+}
+
+table.programs tbody td {
+	font-size: 0.7em;
+	vertical-align: top;
+	border: 1px solid gray;
+	padding: 2px;
+}
+
+table.programs tbody th {
+	font-size: 0.7em;
+	vertical-align: middle;
+	border: 1px solid gray;
+	padding: 2px;
+}
+
+.programs tr {
+	height: 25px;
+}
+
+thead {
+	color: white;
+	background-color: rgb(105, 177, 60);
+}
+
+thead th {
+	font-size: 0.7em;
+	border: 1px solid gray;
+}
+
+thead th:first-of-type {
+	background-color: rgb(153, 86, 7);
+}
+
+thead th:nth-of-type(7), thead th:nth-of-type(8) {
+	background-color: rgb(153, 0, 153);
+}
+
+col.timeColumn {
+	width: 10%;
+	background-color: rgb(215, 205, 151);
+}
+
+col.wDayColumns {
+	width: 11%;
+	background-color: rgb(236, 255, 211);
+}
+
+col.wEndColumns {
+	width: 17%;
+	background-color: rgb(255, 231, 255);
+}
+
+section#intro p {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	 column-count: 3;
+ 
+	-moz-column-gap: 20px;
+	-webkit-column-gap: 20px;
+	 column-gap: 20px;
+ 
+	-moz-column-rule: 1px solid black;
+	-webkit-column-rule: 2px solid black;
+	 column-rule: 2px solid black;
+ }
